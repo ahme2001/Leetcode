@@ -52,33 +52,4 @@ public class GroupAnagrams49 {
         System.out.println(t.groupAnagrams(new String[]{"eat","tea","tan","ate","nat","bat"}));
     }
 
-    /*
-    List<List<String>> res = new ArrayList<>();
-        List<String> temp = new ArrayList<>();
-        temp.add(strs[0]);
-        res.add(temp);
-        for (int i=1;i< strs.length;i++){
-            Boolean flag = true;
-            System.out.println("temp : " + Arrays.toString(new List[]{temp}));
-            for (int j=0;j<temp.size();j++){
-                flag = isAnagram(strs[i],temp.get(j));
-                if (flag){
-                    System.out.println("str: "+ strs[i]);
-                    List<String> templist = res.get(j);
-                    res.remove(j);
-                    templist.add(strs[i]);
-                    res.add(j,templist);
-                    break;
-                }
-            }
-            System.out.println("res = " + Arrays.toString(new List[]{res}));
-            if(!flag){
-                System.out.println(strs[i]);
-                temp.add(strs[i]);
-                List<String> temp2 = new ArrayList<>();
-                temp2.add(strs[i]);
-                res.add(temp2);
-            }
-        }
-     */
 }
