@@ -4,7 +4,7 @@ class Node{
     int sum;
 }
 
-// Solve of Max Subarray using divide and conquer approach
+// Solve of Max Subarray using divide and conquer approach o(n log n)
 public class MaxSubarraySum {
 
     public Node maxSum(int[] arr,int left,int right){
@@ -51,6 +51,18 @@ public class MaxSubarraySum {
         return node;
     }
 
+    // solve using for loop ==> o(n)
+    public int maxSubArray(int[] nums) {
+        int current = nums[0];
+        int max = current;
+
+        for(int i=1;i<nums.length;i++){
+            current = Math.max(current+nums[i],nums[i]);
+            max = Math.max(max,current);
+        }
+        return max;
+    }
+
     public static void main(String[] args) {
         MaxSubarraySum t = new MaxSubarraySum();
         Node node = t.maxSum(new int[]{-1,-2},0,1);
@@ -58,4 +70,8 @@ public class MaxSubarraySum {
         System.out.println(node.right);
         System.out.println(node.sum);
     }
+
+
 }
+
+
