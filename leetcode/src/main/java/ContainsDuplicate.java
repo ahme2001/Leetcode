@@ -1,17 +1,13 @@
-import java.util.HashMap;
+import java.util.HashSet;
 
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums) {
-        HashMap<Integer,Integer> temp = new HashMap<>();
-        for(int i=0;i<nums.length;i++){
-            if (temp.containsKey(nums[i]))
+        HashSet<Integer> temp = new HashSet<>();
+        for (int num : nums) {
+            if (temp.contains(num))
                 return true;
-            temp.put(nums[i],1);
+            temp.add(num);
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-
     }
 }
