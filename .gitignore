@@ -1,3 +1,6 @@
-leetcode/target/classes/
+leetcode/target
 temp.txt
 .vscode/
+leetcode/pom.xml
+leetcode/.idea
+leetcode/src/test
