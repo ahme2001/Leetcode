@@ -4,3 +4,4 @@ temp.txt
 leetcode/pom.xml
 leetcode/.idea
 leetcode/src/test
+.gitignore
