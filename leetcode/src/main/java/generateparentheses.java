@@ -1,4 +1,6 @@
-class generate-parentheses {
+import java.util.*;
+
+class generateparentheses {
     List<String> res = new ArrayList<>();
     public List<String> generateParenthesis(int n) {
         generate("",n,n);
@@ -14,7 +16,6 @@ class generate-parentheses {
         }
         if(open==0 & close == 0)
             res.add(sb);
-        return;
     }
     
 }
