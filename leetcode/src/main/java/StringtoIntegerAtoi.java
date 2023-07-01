@@ -10,10 +10,10 @@ public class StringtoIntegerAtoi {
             t = s.charAt(i) - 48;
             if(t >= 0 && t <= 9)
                 res.append(s.charAt(i));
-            else if(i == 0 && t == -3)
+            else if(i == 0 && t == -3 && !flag && !flagpos)
                 flag = true;
             else if(t == -5 && i == 0){
-                continue;
+                flagpos = true;
             }else
                 break;
         }
